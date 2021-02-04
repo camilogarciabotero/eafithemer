@@ -6,7 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of eafithemer is to …
+The goal of eafithemer is to provide a simple theme using EAFIT
+university instutional aesthetics.
 
 ## Installation
 
