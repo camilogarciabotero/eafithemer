@@ -72,3 +72,9 @@ example workflow can be found here:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
+
+# Credits
+
+This package was highly based on [Ryo
+Nakagawara](https://github.com/Ryo-N7)
+[`tvthemes`](https://ryo-n7.github.io/tvthemes/) package.
