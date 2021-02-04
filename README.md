@@ -44,11 +44,9 @@ palmerpenguins::penguins %>%
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
-    x = "Titles of x axis",
     caption = "First attempt on package creation"
   ) +
-  eafithemer::theme_eafit_light() +
-  scale_color_manual(values = c("darkorange","purple","cyan4"))
+  eafithemer::theme_eafit_light()
 ```
 
 <img src="man/figures/README-theme-light-1.png" width="100%" />
@@ -64,7 +62,6 @@ palmerpenguins::penguins %>%
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
-    x = "Titles of x axis",
     caption = "First attempt on package creation"
   ) +
   eafithemer::theme_eafit_dark()
