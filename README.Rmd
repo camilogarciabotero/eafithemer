@@ -15,7 +15,10 @@ knitr::opts_chunk$set(
 
 # eafithemer
 
+<!-- `r lifecycle::badge('experimental')` -->
+
 <!-- badges: start -->
+<p align="left"><img src="man/figures/lifecycle-experimental.svg"></p>
 <!-- badges: end -->
 
 The goal of eafithemer is to provide a simple theme using EAFIT university instutional aesthetics.
@@ -55,7 +58,7 @@ palmerpenguins::penguins %>%
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r theme-dark, warning=FALSE, message=FALSE}
+```{r theme-dark, warning=FALSE, message=FALSE, eval=FALSE}
 library(tidyverse)
 library(eafithemer)
 

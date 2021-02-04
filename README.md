@@ -3,7 +3,11 @@
 
 # eafithemer
 
+<!-- \ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}} -->
 <!-- badges: start -->
+<p align="left">
+<img src="man/figures/lifecycle-experimental.svg">
+</p>
 <!-- badges: end -->
 
 The goal of eafithemer is to provide a simple theme using EAFIT
