@@ -1,6 +1,41 @@
 library(tidyverse)
 library(extrafont)
 
+#' Eafit theme light
+#'
+#' @param text.font
+#' @param title.font
+#' @param legend.font
+#' @param title.size
+#' @param text.size
+#' @param subtitle.size
+#' @param axis.title.size
+#' @param axis.text.size
+#' @param legend.title.size
+#' @param legend.text.size
+#' @param title.color
+#' @param subtitle.color
+#' @param text.color
+#' @param axis.title.color
+#' @param axis.text.color
+#' @param legend.title.color
+#' @param legend.text.color
+#' @param legend.position
+#' @param ticks
+#'
+#' @return
+#' @export
+#'
+#' @examples palmerpenguins::penguins %>%
+#   ggplot2::ggplot(aes(species, body_mass_g)) +
+#   geom_col() +
+#   labs(
+#     title = "Little title",
+#     subtitle = "Testing the subtitle",
+#     x = "Titles of x axis",
+#     caption = "First attempt on package creation"
+#   ) +
+#   theme_eafit_light()
 theme_eafit_light <- function(
   text.font = "Literation Mono Powerline",
   title.font = "Literation Mono Powerline",
