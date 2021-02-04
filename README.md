@@ -1,13 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# eafithemer
+# eafithemer <img src="man/figures/hex-eafithemer.png" align="right" style="padding-left:10px;background-color:white;" width="100"/>
 
-<!-- \ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}} -->
 <!-- badges: start -->
-<p align="left">
-<img src="man/figures/lifecycle-experimental.svg">
-</p>
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![License: GPL
+v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 <!-- badges: end -->
 
 The goal of eafithemer is to provide a simple theme using EAFIT
@@ -33,8 +34,9 @@ devtools::install_github("camilogarciabotero/eafithemer")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(eafithemer)
 library(tidyverse)
+library(palmerpenguins)
+library(eafithemer)
 palmerpenguins::penguins %>%
   ggplot2::ggplot(aes(species, body_mass_g)) +
   geom_col() +
@@ -51,19 +53,23 @@ palmerpenguins::penguins %>%
 
 ``` r
 library(tidyverse)
+library(palmerpenguins)
 library(eafithemer)
 
 palmerpenguins::penguins %>%
-  ggplot2::ggplot(aes(species, body_mass_g)) +
-  geom_col() +
+    ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
+  geom_point(color = "white") +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
     x = "Titles of x axis",
     caption = "First attempt on package creation"
   ) +
-  theme_eafit_dark()
+  eafithemer::theme_eafit_dark() +
+  scale_color_discrete()
 ```
+
+<img src="man/figures/README-theme-dark-1.png" width="100%" />
 
 # Credits
 

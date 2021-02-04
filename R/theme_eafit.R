@@ -1,9 +1,7 @@
-library(ggplot2)
-library(magrittr)
-library(extrafont)
+#### light_theme ####
 
-#' theme_eafit_light
-#'
+#' @title EAFIT dark theme
+#' @description ligther
 #' @param text.font
 #' @param title.font
 #' @param legend.font
@@ -23,20 +21,10 @@ library(extrafont)
 #' @param legend.text.color
 #' @param legend.position
 #' @param ticks
-#'
-#' @return
+#' @importFrom ggplot2 theme element_text element_rect element_blank element_line
+#' theme_minimal
+#' @importFrom grid unit
 #' @export
-#'
-#' @examples palmerpenguins::penguins %>%
-#   ggplot2::ggplot(aes(species, body_mass_g)) +
-#   geom_col() +
-#   labs(
-#     title = "Little title",
-#     subtitle = "Testing the subtitle",
-#     x = "Titles of x axis",
-#     caption = "First attempt on package creation"
-#   ) +
-#   theme_eafit_light()
 theme_eafit_light <- function(
   text.font = "Literation Mono Powerline",
   title.font = "Literation Mono Powerline",
@@ -98,8 +86,10 @@ theme_eafit_light <- function(
   eafit_light
 }
 
-#' eafit_theme_dark
-#'
+#### dark_theme ####
+
+#' @title EAFIT dark theme
+#' @description Darker version
 #' @param text.font
 #' @param title.font
 #' @param legend.font
@@ -119,11 +109,10 @@ theme_eafit_light <- function(
 #' @param legend.text.color
 #' @param legend.position
 #' @param ticks
-#'
-#' @return
+#' @importFrom ggplot2 theme element_text element_rect element_blank element_line
+#' theme_minimal
+#' @importFrom grid unit
 #' @export
-#'
-#' @examples
 theme_eafit_dark <- function(
   text.font = "Literation Mono Powerline",
   title.font = "Literation Mono Powerline",
@@ -160,7 +149,7 @@ theme_eafit_dark <- function(
       # axis options
       axis.text = element_text(family = text.font, size = axis.text.size, color = axis.text.color),
       # axis.title = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
-      axis.title.x = element_text(family = title.font, size = axis.title.size, color = axis.title.color, vjust = -2),
+      axis.title.x = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
       axis.title.y = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
       # legend options
       legend.text = element_text(family = legend.font, size = legend.text.size, color = legend.text.color),
