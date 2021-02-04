@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_eafit.R
 \name{theme_eafit_light}
 \alias{theme_eafit_light}
-\title{EAFIT dark theme}
+\title{EAFIT light theme}
 \usage{
 theme_eafit_light(
   text.font = "Literation Mono Powerline",

@@ -1,6 +1,6 @@
 #### light_theme ####
 
-#' @title EAFIT dark theme
+#' @title EAFIT light theme
 #' @description ligther
 #' @param text.font
 #' @param title.font

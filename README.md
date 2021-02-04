@@ -37,16 +37,18 @@ This is a basic example which shows you how to solve a common problem:
 library(tidyverse)
 library(palmerpenguins)
 library(eafithemer)
+
 palmerpenguins::penguins %>%
-  ggplot2::ggplot(aes(species, body_mass_g)) +
-  geom_col() +
+    ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
+  geom_point() +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
     x = "Titles of x axis",
     caption = "First attempt on package creation"
   ) +
-  theme_eafit_light()
+  eafithemer::theme_eafit_light() +
+  scale_color_manual(values = c("darkorange","purple","cyan4"))
 ```
 
 <img src="man/figures/README-theme-light-1.png" width="100%" />
@@ -65,8 +67,7 @@ palmerpenguins::penguins %>%
     x = "Titles of x axis",
     caption = "First attempt on package creation"
   ) +
-  eafithemer::theme_eafit_dark() +
-  scale_color_discrete()
+  eafithemer::theme_eafit_dark()
 ```
 
 <img src="man/figures/README-theme-dark-1.png" width="100%" />
