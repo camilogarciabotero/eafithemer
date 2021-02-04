@@ -1,4 +1,5 @@
-library(tidyverse)
+library(ggplot2)
+library(magrittr)
 library(extrafont)
 
 #' theme_eafit_light

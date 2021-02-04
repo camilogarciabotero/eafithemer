@@ -56,7 +56,6 @@ palmerpenguins::penguins %>%
   theme_eafit_light()
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
 ```{r theme-dark, warning=FALSE, message=FALSE, eval=FALSE}
 library(tidyverse)

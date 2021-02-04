@@ -49,9 +49,6 @@ palmerpenguins::penguins %>%
 
 <img src="man/figures/README-theme-light-1.png" width="100%" />
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
 ``` r
 library(tidyverse)
 library(eafithemer)
