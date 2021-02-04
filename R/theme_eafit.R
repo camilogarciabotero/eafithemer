@@ -1,7 +1,7 @@
 library(tidyverse)
 library(extrafont)
 
-#' Eafit theme light
+#' theme_eafit_light
 #'
 #' @param text.font
 #' @param title.font
@@ -97,6 +97,32 @@ theme_eafit_light <- function(
   eafit_light
 }
 
+#' eafit_theme_dark
+#'
+#' @param text.font
+#' @param title.font
+#' @param legend.font
+#' @param title.size
+#' @param text.size
+#' @param subtitle.size
+#' @param axis.title.size
+#' @param axis.text.size
+#' @param legend.title.size
+#' @param legend.text.size
+#' @param title.color
+#' @param subtitle.color
+#' @param text.color
+#' @param axis.title.color
+#' @param axis.text.color
+#' @param legend.title.color
+#' @param legend.text.color
+#' @param legend.position
+#' @param ticks
+#'
+#' @return
+#' @export
+#'
+#' @examples
 theme_eafit_dark <- function(
   text.font = "Literation Mono Powerline",
   title.font = "Literation Mono Powerline",

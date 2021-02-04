@@ -9,7 +9,7 @@ test_that("theme light works", {
 #     title = "Little title",
 #     subtitle = "Testing the subtitle",
 #     x = "Titles of x axis",
-#     caption = "First attemp on package creation"
+#     caption = "First attempt on package creation"
 #   ) +
 #   theme_eafit_light()
 #
@@ -20,6 +20,6 @@ test_that("theme light works", {
 #     title = "Little title",
 #     subtitle = "Testing the subtitle",
 #     x = "Titles of x axis",
-#     caption = "First attemp on package creation"
+#     caption = "First attempt on package creation"
 #   ) +
 #   theme_eafit_dark()

@@ -1,5 +1,5 @@
 Package: eafithemer
-Title:  (One Line, Title Case)
+Title: (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Camilo",
@@ -16,3 +16,6 @@ RoxygenNote: 7.1.1
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Imports: 
+    ggplot2,
+    dplyr
