@@ -43,4 +43,3 @@ scale_color_eafit <- scale_colour_eafit
 #' @rdname scale_eafit
 #' @export
 scale_fill_eafit <- function(...) ggplot2::discrete_scale('fill', 'eafit', eafit_pal(), ...)
-

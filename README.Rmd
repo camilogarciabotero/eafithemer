@@ -87,15 +87,15 @@ palmerpenguins::penguins %>%
 
 ```{r palette-obj, include=F}
 eafit_palette <- c(
-  "#000359" #navy blue
-  ,"#009BD0" #light blue
+  "#0F1114" #dark grey
   ,"#0E1526" #dark blue
+  ,"#000359" #navy blue
+  ,"#009BD0" #light blue
   ,"#459D96" #gray green
   ,"#404376" #purple blue
-  ,"#0F1114" #dark grey
-  ,"#8A8A8A" #light grey
   ,"#4f5157" #darker blue/grey
-  ,"#FFFFFF" #lighter brown
+  ,"#8A8A8A" #light grey
+  ,"#FFFFFF" #white
 )
 ```
 

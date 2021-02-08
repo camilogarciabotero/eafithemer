@@ -5,9 +5,9 @@
 \title{EAFIT dark theme}
 \usage{
 theme_eafit_dark(
-  text.font = "Literation Mono Powerline",
-  title.font = "Literation Mono Powerline",
-  legend.font = "Literation Mono Powerline",
+  text.font = "Courier",
+  title.font = "Courier",
+  legend.font = "Courier",
   title.size = 18,
   text.size = 14,
   subtitle.size = 12,
@@ -26,6 +26,62 @@ theme_eafit_dark(
   ticks = FALSE
 )
 }
+\arguments{
+\item{text.font}{font, Default: "Courier"}
+
+\item{title.font}{font, Default: "Courier"}
+
+\item{legend.font}{font, Default: "Courier"}
+
+\item{title.size}{title font size, Default: 18}
+
+\item{text.size}{text font size, Default: 14}
+
+\item{subtitle.size}{subtitle font size, Default: 12}
+
+\item{axis.title.size}{title font size, Default: 14}
+
+\item{axis.text.size}{text font size, Default: 12}
+
+\item{legend.title.size}{title font size, Default: 10}
+
+\item{legend.text.size}{text font size, Default: 9}
+
+\item{title.color}{title color, Default: '#FFFFFF'}
+
+\item{subtitle.color}{subtitle color, Default: '#FFFFFF'}
+
+\item{text.color}{text color, Default: '#FFFFFF'}
+
+\item{axis.title.color}{axis title color, Default: '#FFFFFF'}
+
+\item{axis.text.color}{axis text color, Default: '#FFFFFF'}
+
+\item{legend.title.color}{legend title color, Default: '#FFFFFF'}
+
+\item{legend.text.color}{legend text color, Default: '#FFFFFF'}
+
+\item{legend.position}{legend position, Default: 'bottom'}
+
+\item{ticks}{ticks, Default: FALSE}
+}
 \description{
 Darker version
+}
+\examples{
+library(ggplot2)
+library(palmerpenguins)
+
+  ggplot(penguins,aes(bill_length_mm, flipper_length_mm)) +
+  geom_point(aes(color = species)) +
+  labs(
+    title = "Little title",
+    subtitle = "Testing the subtitle",
+    caption = "First attempt on package creation"
+  ) +
+  theme_eafit_dark() +
+  scale_color_eafit() +
+  theme(
+    legend.title = element_blank()
+  )
 }
