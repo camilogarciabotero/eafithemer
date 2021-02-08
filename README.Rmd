@@ -35,7 +35,7 @@ The goal of eafithemer is to provide a simple theme using EAFIT university instu
 You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+install.packages("devtools")
 devtools::install_github("camilogarciabotero/eafithemer")
 ```
 
@@ -50,13 +50,17 @@ library(eafithemer)
 
 palmerpenguins::penguins %>%
     ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
-  geom_point() +
+  geom_point(aes(color = species)) +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
     caption = "First attempt on package creation"
   ) +
-  eafithemer::theme_eafit_light()
+  eafithemer::theme_eafit_light() +
+  eafithemer::scale_color_eafit() +
+  theme(
+    legend.title = element_blank()
+  )
 ```
 
 ```{r theme-dark, warning=FALSE, message=FALSE}
@@ -66,13 +70,37 @@ library(eafithemer)
 
 palmerpenguins::penguins %>%
     ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
-  geom_point(color = "white") +
+  geom_point(aes(color = species)) +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
     caption = "First attempt on package creation"
   ) +
-  eafithemer::theme_eafit_dark()
+  eafithemer::theme_eafit_dark() +
+  scale_color_brewer() +
+  theme(
+    legend.title = element_blank()
+  )
+```
+
+# A glance into EAFIT palette
+
+```{r palette-obj, include=F}
+eafit_palette <- c(
+  "#000359" #navy blue
+  ,"#009BD0" #light blue
+  ,"#0E1526" #dark blue
+  ,"#459D96" #gray green
+  ,"#404376" #purple blue
+  ,"#0F1114" #dark grey
+  ,"#8A8A8A" #light grey
+  ,"#4f5157" #darker blue/grey
+  ,"#FFFFFF" #lighter brown
+)
+```
+
+```{r palette}
+scales::show_col(eafit_palette)
 ```
 
 # Credits

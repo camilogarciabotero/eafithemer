@@ -41,7 +41,7 @@ theme_eafit_light <- function(
   text.color = "#000359",
   axis.title.color = "#000359",
   axis.text.color = "#000359",
-  legend.title.color = "##000359",
+  legend.title.color = "#000359",
   legend.text.color = "#000359",
   legend.position = "bottom",
   ticks = FALSE
@@ -66,23 +66,8 @@ theme_eafit_light <- function(
       legend.title = element_text(family = legend.font, size = legend.title.size, color = legend.title.color),
       legend.position = legend.position,
       legend.key = element_rect(colour = "black", linetype = "solid", size = 1.1),
-      legend.background = element_rect(color = "black", fill = "#FFFFFF", linetype = "solid") ## #64719E  #8a2be2
+      # legend.background = element_rect(color = "black", fill = "#FFFFFF", linetype = "solid") ## #64719E  #8a2be2
     )
-
-  if (ticks == FALSE) {
-    eafit_light <- eafit_light + theme(
-      axis.ticks = element_blank(),
-      axis.ticks.x = element_blank(),
-      axis.ticks.y = element_blank()
-    )
-  } else {
-    eafit_light <- eafit_light + theme(
-      axis.ticks = element_line(size = 0.15, color = "#93a1a1"),
-      axis.ticks.x = element_line(size = 0.15, color = "#93a1a1"),
-      axis.ticks.y = element_line(size = 0.15, color = "#93a1a1"),
-      axis.ticks.length = grid::unit(4, "pt")
-    )
-  }
   eafit_light
 }
 
@@ -156,22 +141,8 @@ theme_eafit_dark <- function(
       legend.title = element_text(family = legend.font, size = legend.title.size, color = legend.title.color),
       legend.position = legend.position,
       legend.key = element_rect(colour = "black", linetype = "solid", size = 1.1),
-      legend.background = element_rect(color = "black", fill = "#000359", linetype = "solid"), ## #64719E  #8a2be2
+      # legend.background = element_rect(color = "black", fill = "#000359", linetype = "solid"), ## #64719E  #8a2be2
 
     )
-  if (ticks == FALSE) {
-    eafit_dark <- eafit_dark + theme(
-      axis.ticks = element_blank(),
-      axis.ticks.x = element_blank(),
-      axis.ticks.y = element_blank()
-    )
-  } else {
-    eafit_dark <- eafit_dark + theme(
-      axis.ticks = element_line(size = 0.15, color = "#93a1a1"),
-      axis.ticks.x = element_line(size = 0.15, color = "#93a1a1"),
-      axis.ticks.y = element_line(size = 0.15, color = "#93a1a1"),
-      axis.ticks.length = grid::unit(4, "pt")
-    )
-  }
   eafit_dark
 }

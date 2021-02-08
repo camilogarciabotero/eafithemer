@@ -20,7 +20,7 @@ theme_eafit_light(
   text.color = "#000359",
   axis.title.color = "#000359",
   axis.text.color = "#000359",
-  legend.title.color = "##000359",
+  legend.title.color = "#000359",
   legend.text.color = "#000359",
   legend.position = "bottom",
   ticks = FALSE

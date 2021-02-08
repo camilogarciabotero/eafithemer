@@ -25,7 +25,7 @@ You can install the development version from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+install.packages("devtools")
 devtools::install_github("camilogarciabotero/eafithemer")
 ```
 
@@ -40,13 +40,17 @@ library(eafithemer)
 
 palmerpenguins::penguins %>%
     ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
-  geom_point() +
+  geom_point(aes(color = species)) +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
     caption = "First attempt on package creation"
   ) +
-  eafithemer::theme_eafit_light()
+  eafithemer::theme_eafit_light() +
+  eafithemer::scale_color_eafit() +
+  theme(
+    legend.title = element_blank()
+  )
 ```
 
 <img src="man/figures/README-theme-light-1.png" width="100%" />
@@ -58,16 +62,28 @@ library(eafithemer)
 
 palmerpenguins::penguins %>%
     ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
-  geom_point(color = "white") +
+  geom_point(aes(color = species)) +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
     caption = "First attempt on package creation"
   ) +
-  eafithemer::theme_eafit_dark()
+  eafithemer::theme_eafit_dark() +
+  scale_color_brewer() +
+  theme(
+    legend.title = element_blank()
+  )
 ```
 
 <img src="man/figures/README-theme-dark-1.png" width="100%" />
+
+# A glance into EAFIT palette
+
+``` r
+scales::show_col(eafit_palette)
+```
+
+<img src="man/figures/README-palette-1.png" width="100%" />
 
 # Credits
 
