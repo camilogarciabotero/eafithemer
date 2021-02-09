@@ -1,3 +1,15 @@
+home:
+  title: eafithemer
+  description: An R package for theming ggplot objects
+
+template:
+  opengraph:
+    image:
+      src: man/figures/card.png
+      alt: "Pool noodles configured to form the word poolnoodlr"
+    twitter:
+      creator: "@gaspardelanoche"
+
 reference:
 - title: "Using an EAFIT themes"
   desc: >
