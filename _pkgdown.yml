@@ -28,7 +28,7 @@ reference:
 - contents:
   - starts_with("scale")
 
-  url: https://camilogarciabotero.github.io/eafithemer/index.html
+url: https://camilogarciabotero.github.io/eafithemer/
 
 navbar:
   structure:
