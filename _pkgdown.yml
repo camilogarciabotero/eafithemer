@@ -2,6 +2,10 @@ home:
   title: eafithemer
   description: An R package for theming ggplot objects
 
+
+authors: Camilo Garcia
+  href: http://camilogarciabotero.github.io
+
 template:
   opengraph:
     image:
@@ -25,3 +29,8 @@ reference:
   - starts_with("scale")
 
   url: https://camilogarciabotero.github.io/eafithemer/index.html
+
+navbar:
+  structure:
+    left:  [home, intro, reference, news]
+    right: [github]
