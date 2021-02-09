@@ -9,6 +9,8 @@ template:
       alt: "Pool noodles configured to form the word poolnoodlr"
     twitter:
       creator: "@gaspardelanoche"
+  params:
+      ganalytics: UA-154731538-1
 
 reference:
 - title: "Using an EAFIT themes"
