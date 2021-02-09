@@ -1,0 +1,11 @@
+reference:
+- title: "Using an EAFIT themes"
+  desc: >
+    Functions to use on ggplot2 themes
+- contents:
+  - theme_eafit_light
+  - theme_eafit_dark
+- title: "Scaling colors an fill"
+  desc: "Functions for reading and writing Spark DataFrames."
+- contents:
+  - starts_with("scale")
