@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# eafithemer <img src="man/figures/hex-eafithemer.png" align="right" style="padding-left:10px;background-color:white;" width="100"/>
+# eafithemer <img src="man/figures/logo.png" align="right" style="padding-left:10px;background-color:white;" width="100"/>
 
 <!-- badges: start -->
 
