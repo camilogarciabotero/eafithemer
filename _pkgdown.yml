@@ -23,3 +23,5 @@ reference:
   desc: "Functions for reading and writing Spark DataFrames."
 - contents:
   - starts_with("scale")
+
+  url: https://camilogarciabotero.github.io/eafithemer/index.html
