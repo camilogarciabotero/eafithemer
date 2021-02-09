@@ -31,6 +31,10 @@ reference:
 
 url: https://camilogarciabotero.github.io/eafithemer/
 
+repo:
+  url:
+    home: https://github.com/camilogarciabotero/eafithemer/
+
 navbar:
   structure:
     left:  [home, intro, reference, news]
