@@ -77,9 +77,6 @@ The default, \code{TRUE}, uses the levels that appear in the data;
 \description{
 Color scales based on institutional aesthetics of EAFIT university
 }
-\references{
-https://usdawatercolors.nal.usda.gov/pom
-}
 \seealso{
 \link[ggplot2:scale_colour_discrete]{ggplot2::scale_colour_discrete} \link[ggplot2:scale_colour_discrete]{ggplot2::scale_fill_discrete}
 }

@@ -24,7 +24,6 @@ eafit_palette <- c(
 #'
 #' Color scales based on institutional aesthetics of EAFIT university
 #'
-#' @references https://usdawatercolors.nal.usda.gov/pom
 #' @seealso [ggplot2::scale_colour_discrete] [ggplot2::scale_fill_discrete]
 #' @inheritDotParams ggplot2::discrete_scale
 #' @name scale_eafit
