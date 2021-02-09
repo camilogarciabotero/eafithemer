@@ -31,9 +31,9 @@ install.packages("devtools")
 devtools::install_github("camilogarciabotero/eafithemer")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example Showing the light template:
 
 ``` r
 library(tidyverse)
@@ -56,6 +56,8 @@ palmerpenguins::penguins %>%
 ```
 
 <img src="man/figures/README-theme-light-1.png" width="100%" />
+
+For dark template see:
 
 ``` r
 library(tidyverse)
@@ -86,6 +88,14 @@ scales::show_col(eafit_palette)
 ```
 
 <img src="man/figures/README-palette-1.png" width="100%" />
+
+# Citation
+
+If you find this package useful, please consider the following citation!
+
+> Camilo García. (2021). eafithemer v1.0.0: a simple ggplot theme for
+> EAFIT institution (Version v1.0.0). Zenodo.
+> <http://doi.org/10.5281/zenodo.4526717>
 
 # Credits
 
