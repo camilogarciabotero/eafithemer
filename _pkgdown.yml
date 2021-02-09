@@ -3,8 +3,9 @@ home:
   description: An R package for theming ggplot objects
 
 
-authors: Camilo Garcia
-  href: http://camilogarciabotero.github.io
+authors:
+  Camilo Garcia:
+    href: http://camilogarciabotero.github.io
 
 template:
   opengraph:
