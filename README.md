@@ -14,7 +14,7 @@ v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/li
 <!-- badges: end -->
 
 The goal of eafithemer is to provide a simple theme using EAFIT
-university instutional aesthetics.
+university institutional aesthetics.
 
 ## Installation
 
@@ -36,17 +36,16 @@ devtools::install_github("camilogarciabotero/eafithemer")
 This is a basic example Showing the light template:
 
 ``` r
-library(tidyverse)
+library(ggplot2)
 library(palmerpenguins)
 library(eafithemer)
 
-palmerpenguins::penguins %>%
-    ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
-  geom_point(aes(color = species)) +
+ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
+  geom_point(aes(color = species, shape = species)) +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
-    caption = "First attempt on package creation"
+    caption = "Here is the caption"
   ) +
   eafithemer::theme_eafit_light() +
   eafithemer::scale_color_eafit() +
@@ -57,20 +56,19 @@ palmerpenguins::penguins %>%
 
 <img src="man/figures/README-theme-light-1.png" width="100%" />
 
-For dark template see:
+For dark theme see:
 
 ``` r
-library(tidyverse)
+library(ggplot2)
 library(palmerpenguins)
 library(eafithemer)
 
-palmerpenguins::penguins %>%
-    ggplot2::ggplot(aes(bill_length_mm, flipper_length_mm)) +
-  geom_point(aes(color = species)) +
+ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
+  geom_point(aes(color = species, shape = species)) +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
-    caption = "First attempt on package creation"
+    caption = "Here is the caption"
   ) +
   eafithemer::theme_eafit_dark() +
   scale_color_brewer() +

@@ -71,16 +71,17 @@ ligther
 \examples{
 library(ggplot2)
 library(palmerpenguins)
+library(eafithemer)
 
 ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
-  geom_point(aes(color = species)) +
+  geom_point(aes(color = species, shape = species)) +
   labs(
     title = "Little title",
     subtitle = "Testing the subtitle",
     caption = "First attempt on package creation"
   ) +
-  theme_eafit_light() +
-  scale_color_eafit() +
+  eafithemer::theme_eafit_light() +
+  eafithemer::scale_color_eafit() +
   theme(
     legend.title = element_blank()
   )

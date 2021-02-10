@@ -10,16 +10,6 @@ eafit_palette <- c(
   ,"#FFFFFF" #white
 )
 
-# eafit_base <- list(
-#   "paper"       = "#fffeea",
-#   "paper_alt"   = "#f8eed1",
-#   "light_line"  = "#efe1c6",
-#   "medium_line" = "#a89985",
-#   "darker_line" = "#6b452b",
-#   "black"       = "#3a3e3f",
-#   "dark_blue"   = "#2b323f"
-# )
-
 #' EAFIT Color and Fill Scales
 #'
 #' Color scales based on institutional aesthetics of EAFIT university

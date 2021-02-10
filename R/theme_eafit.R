@@ -24,16 +24,17 @@
 #' @examples
 #' library(ggplot2)
 #' library(palmerpenguins)
+#' library(eafithemer)
 #'
 #' ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
-#'   geom_point(aes(color = species)) +
+#'   geom_point(aes(color = species, shape = species)) +
 #'   labs(
 #'     title = "Little title",
 #'     subtitle = "Testing the subtitle",
 #'     caption = "First attempt on package creation"
 #'   ) +
-#'   theme_eafit_light() +
-#'   scale_color_eafit() +
+#'   eafithemer::theme_eafit_light() +
+#'   eafithemer::scale_color_eafit() +
 #'   theme(
 #'     legend.title = element_blank()
 #'   )
@@ -82,7 +83,6 @@ theme_eafit_light <- function(
       legend.text = element_text(family = legend.font, size = legend.text.size, color = legend.text.color),
       legend.title = element_text(family = legend.font, size = legend.title.size, color = legend.title.color),
       legend.position = legend.position,
-      legend.key = element_rect(colour = "black", linetype = "solid", size = 1.1)
     )
   eafit_light
 }
@@ -113,16 +113,17 @@ theme_eafit_light <- function(
 #' @examples
 #' library(ggplot2)
 #' library(palmerpenguins)
+#' library(eafithemer)
 #'
 #'   ggplot(penguins,aes(bill_length_mm, flipper_length_mm)) +
-#'   geom_point(aes(color = species)) +
+#'   geom_point(aes(color = species, shape = species)) +
 #'   labs(
 #'     title = "Little title",
 #'     subtitle = "Testing the subtitle",
 #'     caption = "First attempt on package creation"
 #'   ) +
-#'   theme_eafit_dark() +
-#'   scale_color_eafit() +
+#'   eafithemer::theme_eafit_dark() +
+#'   scale_color_brewer() +
 #'   theme(
 #'     legend.title = element_blank()
 #'   )
@@ -167,43 +168,13 @@ theme_eafit_dark <- function(
       panel.grid = element_line(color = "#DDDDDD", linetype = "dashed"),# Soft gray
       # axis options
       axis.text = element_text(family = text.font, size = axis.text.size, color = axis.text.color),
-      # axis.title = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
       axis.title.x = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
       axis.title.y = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
       # legend options
       legend.text = element_text(family = legend.font, size = legend.text.size, color = legend.text.color),
       legend.title = element_text(family = legend.font, size = legend.title.size, color = legend.title.color),
       legend.position = legend.position,
-      legend.key = element_rect(colour = "black", linetype = "solid", size = 1.1)
     )
   eafit_dark
 }
 
-
-# font_urls <- data.frame(
-#   name = c("Courier"),
-#   url  = c(
-#     "https://fonts.google.com/specimen/Courier"
-#   )
-# )
-
-# check_font <- function(font_name) {
-#   if (!requireNamespace("extrafont", quietly = TRUE)) {
-#     warning("The font \"", font_name, "\" may or may not be installed on your system.",
-#             "Please install the package `extrafont` if you'd like me to be able to check for you.",
-#             call. = FALSE)
-#   } else {
-#     if (!font_name %in% extrafont::fonts()) {
-#       if (font_name %in% font_urls$name) {
-#         warning("Font '", font_name, "' isn't in the extrafont font list (but it may still work). ",
-#                 "If recently installed, you can try running `extrafont::font_import()`. ",
-#                 "To install, visit: ", font_urls[font_urls$name == font_name, "url"],
-#                 call. = FALSE)
-#       } else {
-#         warning("Font '", font_name, "' isn't in the extrafont font list (but it may still work). ",
-#                 "If recently installed, you can try running `extrafont::font_import()`. ",
-#                 call. = FALSE)
-#       }
-#     }
-#   }
-# }
