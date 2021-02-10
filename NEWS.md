@@ -1,3 +1,5 @@
+# eafithemer 1.0.1
+
 # News
 
 This is the firt major release file. For the time being `eafithemer` has:
