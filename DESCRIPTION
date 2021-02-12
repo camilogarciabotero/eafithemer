@@ -20,5 +20,6 @@ Imports:
     ggplot2,
     palmerpenguins,
     extrafont,
-    scales
+    scales,
+    ggprism
 URL: https://camilogarciabotero.github.io/eafithemer/

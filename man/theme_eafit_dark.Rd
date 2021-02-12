@@ -22,8 +22,7 @@ theme_eafit_dark(
   axis.text.color = "#FFFFFF",
   legend.title.color = "#FFFFFF",
   legend.text.color = "#FFFFFF",
-  legend.position = "bottom",
-  ticks = FALSE
+  legend.position = "bottom"
 )
 }
 \arguments{
@@ -62,8 +61,6 @@ theme_eafit_dark(
 \item{legend.text.color}{legend text color, Default: '#FFFFFF'}
 
 \item{legend.position}{legend position, Default: 'bottom'}
-
-\item{ticks}{ticks, Default: FALSE}
 }
 \description{
 Darker version

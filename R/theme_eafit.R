@@ -20,7 +20,6 @@
 #' @param legend.title.color legend title color, Default: '#000359'
 #' @param legend.text.color legend text color, Default: '#000359'
 #' @param legend.position legend position, Default: 'bottom'
-#' @param ticks ticks, Default: FALSE
 #' @examples
 #' library(ggplot2)
 #' library(palmerpenguins)
@@ -62,8 +61,7 @@ theme_eafit_light <- function(
   axis.text.color = "#000359",
   legend.title.color = "#000359",
   legend.text.color = "#000359",
-  legend.position = "bottom",
-  ticks = FALSE
+  legend.position = "bottom"
 ) {
   ## use theme_minimal as the base
   eafit_light <- ggplot2::theme_minimal() +
@@ -75,14 +73,16 @@ theme_eafit_light <- function(
       # background/panel options
       plot.background = element_rect(color = NA, fill = "#FFFFFF"),
       panel.background = element_rect(color = NA, fill = "#FFFFFF"),
-      panel.grid = element_line(color = "#DDDDDD", linetype = "dashed"),# Soft gray
+      panel.grid = element_line(color = "#DDDDDD", linetype = "dotted"),# Soft gray
       # axis options
       axis.text = element_text(family = text.font, size = axis.text.size, color = axis.text.color),
       axis.title = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
+      # axis.line = element_line(color = "#000359"),
+      axis.ticks = element_line(color = "#000359"),
       # legend options
       legend.text = element_text(family = legend.font, size = legend.text.size, color = legend.text.color),
       legend.title = element_text(family = legend.font, size = legend.title.size, color = legend.title.color),
-      legend.position = legend.position,
+      legend.position = legend.position
     )
   eafit_light
 }
@@ -109,7 +109,6 @@ theme_eafit_light <- function(
 #' @param legend.title.color legend title color, Default: '#FFFFFF'
 #' @param legend.text.color legend text color, Default: '#FFFFFF'
 #' @param legend.position legend position, Default: 'bottom'
-#' @param ticks ticks, Default: FALSE
 #' @examples
 #' library(ggplot2)
 #' library(palmerpenguins)
@@ -151,8 +150,7 @@ theme_eafit_dark <- function(
   axis.text.color = "#FFFFFF",
   legend.title.color = "#FFFFFF",
   legend.text.color = "#FFFFFF",
-  legend.position = "bottom",
-  ticks = FALSE
+  legend.position = "bottom"
 ) {
 
   ## use theme_minimal as the base
@@ -165,15 +163,17 @@ theme_eafit_dark <- function(
       # background/panel options
       plot.background = element_rect(color = NA, fill = "#000359"),
       panel.background = element_rect(color = NA, fill = "#000359"),
-      panel.grid = element_line(color = "#DDDDDD", linetype = "dashed"),# Soft gray
+      panel.grid = element_line(color = "#DDDDDD", linetype = "dotted"),# Soft gray
       # axis options
       axis.text = element_text(family = text.font, size = axis.text.size, color = axis.text.color),
       axis.title.x = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
       axis.title.y = element_text(family = title.font, size = axis.title.size, color = axis.title.color),
+      # axis.line = element_line(color = "#FFFFFF"),
+      axis.ticks = element_line(color = "#DDDDDD"),
       # legend options
       legend.text = element_text(family = legend.font, size = legend.text.size, color = legend.text.color),
       legend.title = element_text(family = legend.font, size = legend.title.size, color = legend.title.color),
-      legend.position = legend.position,
+      legend.position = legend.position
     )
   eafit_dark
 }

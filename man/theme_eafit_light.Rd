@@ -22,8 +22,7 @@ theme_eafit_light(
   axis.text.color = "#000359",
   legend.title.color = "#000359",
   legend.text.color = "#000359",
-  legend.position = "bottom",
-  ticks = FALSE
+  legend.position = "bottom"
 )
 }
 \arguments{
@@ -62,8 +61,6 @@ theme_eafit_light(
 \item{legend.text.color}{legend text color, Default: '#000359'}
 
 \item{legend.position}{legend position, Default: 'bottom'}
-
-\item{ticks}{ticks, Default: FALSE}
 }
 \description{
 ligther

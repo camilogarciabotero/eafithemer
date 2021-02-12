@@ -38,6 +38,7 @@ This is a basic example Showing the light template:
 ``` r
 library(ggplot2)
 library(palmerpenguins)
+library(ggprism)
 library(eafithemer)
 
 ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
@@ -50,8 +51,11 @@ ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
   eafithemer::theme_eafit_light() +
   eafithemer::scale_color_eafit() +
   theme(
-    legend.title = element_blank()
-  )
+    legend.title = element_blank(),
+    axis.line = element_line(),
+  ) +
+  scale_x_continuous(guide = "prism_offset_minor", limits = c(30, 60)) +
+  scale_y_continuous(guide = "prism_offset_minor") 
 ```
 
 <img src="man/figures/README-theme-light-1.png" width="100%" />
@@ -61,6 +65,7 @@ For dark theme see:
 ``` r
 library(ggplot2)
 library(palmerpenguins)
+library(ggprism)
 library(eafithemer)
 
 ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
@@ -70,11 +75,14 @@ ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
     subtitle = "Testing the subtitle",
     caption = "Here is the caption"
   ) +
-  eafithemer::theme_eafit_dark() + #<<
+  eafithemer::theme_eafit_dark() +
   scale_color_brewer() +
   theme(
-    legend.title = element_blank()
-  )
+    legend.title = element_blank(),
+    axis.line = element_line(color = "#DDDDDD")
+  ) +
+  scale_x_continuous(guide = "prism_offset_minor", limits = c(30, 60)) +
+  scale_y_continuous(guide = "prism_offset_minor") 
 ```
 
 <img src="man/figures/README-theme-dark-1.png" width="100%" />
