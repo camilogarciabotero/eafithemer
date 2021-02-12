@@ -2,7 +2,6 @@ home:
   title: eafithemer
   description: An R package for theming ggplot objects
 
-
 authors:
   Camilo Garcia:
     href: http://camilogarciabotero.github.io
@@ -15,7 +14,9 @@ template:
     twitter:
       creator: "@gaspardelanoche"
   params:
+      bootswatch: cosmo
       ganalytics: UA-154731538-1
+
 
 reference:
 - title: "Using an EAFIT themes"

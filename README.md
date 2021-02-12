@@ -70,7 +70,7 @@ ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
     subtitle = "Testing the subtitle",
     caption = "Here is the caption"
   ) +
-  eafithemer::theme_eafit_dark() +
+  eafithemer::theme_eafit_dark() + #<<
   scale_color_brewer() +
   theme(
     legend.title = element_blank()
@@ -91,8 +91,8 @@ scales::show_col(eafit_palette)
 
 If you find this package useful, please consider the following citation!
 
-> Camilo García. (2021). eafithemer v1.0.0: a simple ggplot theme for
-> EAFIT institution (Version v1.0.0). Zenodo.
+> Camilo García-Botero. (2021). eafithemer: a simple ggplot2 theme for
+> EAFIT institution (Version 1.0.0). Zenodo.
 > <http://doi.org/10.5281/zenodo.4526717>
 
 # Credits
