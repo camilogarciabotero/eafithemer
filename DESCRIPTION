@@ -1,5 +1,5 @@
 Package: eafithemer
-Title: (One Line, Title Case)
+Title: a simple ggplot2 theme for EAFIT institution
 Version: 1.0.1
 Authors@R: 
     person(given = "Camilo",
