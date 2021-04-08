@@ -1,5 +1,8 @@
 Package: eafithemer
 Title: a simple ggplot2 theme for EAFIT institution
+Description: A simple minimal template using the EAFIT University institutional aesthetics unofficial opinion.   
+URL: https://camilogarciabotero.github.io/eafithemer/
+BugReports: https://github.com/camilogarciabotero/eafithemer/issues
 Version: 1.0.1
 Authors@R: 
     person(given = "Camilo",
