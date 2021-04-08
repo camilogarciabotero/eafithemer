@@ -10,7 +10,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![License: GPL
 v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![R-CMD-check](https://github.com/camilogarciabotero/eafithemer/workflows/R-CMD-check/badge.svg)](https://github.com/camilogarciabotero/eafithemer/actions)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4526717.svg)](https://doi.org/10.5281/zenodo.4526717)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4672820.svg)](https://doi.org/10.5281/zenodo.4672820)
 
 <!-- badges: end -->
 
@@ -100,9 +100,9 @@ scales::show_col(eafit_palette)
 
 If you find this package useful, please consider the following citation!
 
-> Camilo García-Botero. (2021). eafithemer: a simple ggplot2 theme for
-> EAFIT institution (Version 1.0.0). Zenodo.
-> <http://doi.org/10.5281/zenodo.4526717>
+> Camilo García-Botero. (2021, April 8). eafithemer: a simple ggplot2
+> theme for EAFIT institution (Version 1.0.1). Zenodo.
+> <http://doi.org/10.5281/zenodo.4672820>
 
 # Credits
 
