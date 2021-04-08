@@ -10,7 +10,6 @@ Authors@R:
            role = c("aut", "cre"),
            email = "cgarci39@eafit.edu.co",
            comment = c(ORCID = "0000-0002-0426-7007"))
-Description: Set a theme using an EAFIT institutional aesthetic (unpopular).
 License: AGPL (>= 3)
 Encoding: UTF-8
 LazyData: true
