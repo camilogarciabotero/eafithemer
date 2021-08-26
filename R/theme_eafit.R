@@ -2,9 +2,9 @@
 
 #' @title EAFIT light theme
 #' @description ligther
-#' @param text.font font, Default: "Courier"
-#' @param title.font font, Default: "Courier"
-#' @param legend.font font, Default: "Courier"
+#' @param text.font font, Default: NULL
+#' @param title.font font, Default: NULL
+#' @param legend.font font, Default: NULL
 #' @param title.size title font size, Default: 18
 #' @param text.size text font size, Default: 14
 #' @param subtitle.size subtitle font size, Default: 12
@@ -44,9 +44,9 @@
 #' @importFrom extrafont font_import
 #' @export
 theme_eafit_light <- function(
-  text.font = "Courier",
-  title.font = "Courier",
-  legend.font = "Courier",
+  text.font = NULL,
+  title.font = NULL,
+  legend.font = NULL,
   title.size = 18,
   text.size = 14,
   subtitle.size = 12,
@@ -91,9 +91,9 @@ theme_eafit_light <- function(
 
 #' @title EAFIT dark theme
 #' @description Darker version
-#' @param text.font font, Default: "Courier"
-#' @param title.font font, Default: "Courier"
-#' @param legend.font font, Default: "Courier"
+#' @param text.font font, Default: NULL
+#' @param title.font font, Default: NULL
+#' @param legend.font font, Default: NULL
 #' @param title.size title font size, Default: 18
 #' @param text.size text font size, Default: 14
 #' @param subtitle.size subtitle font size, Default: 12
@@ -133,9 +133,9 @@ theme_eafit_light <- function(
 #' @importFrom extrafont font_import
 #' @export
 theme_eafit_dark <- function(
-  text.font = "Courier",
-  title.font = "Courier",
-  legend.font = "Courier",
+  text.font = NULL,
+  title.font = NULL,
+  legend.font = NULL,
   title.size = 18,
   text.size = 14,
   subtitle.size = 12,

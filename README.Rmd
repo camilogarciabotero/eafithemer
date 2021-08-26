@@ -66,6 +66,7 @@ ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
   theme(
     legend.title = element_blank(),
     axis.line = element_line(),
+    text = element_text(family = "Atkinson Hyperlegible")
   ) +
   scale_x_continuous(guide = "prism_offset_minor", limits = c(30, 60)) +
   scale_y_continuous(guide = "prism_offset_minor") 
@@ -91,7 +92,8 @@ ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
   scale_color_brewer() +
   theme(
     legend.title = element_blank(),
-    axis.line = element_line(color = "#DDDDDD")
+    axis.line = element_line(color = "#DDDDDD"),
+    text = element_text(family = "Atkinson Hyperlegible")
   ) +
   scale_x_continuous(guide = "prism_offset_minor", limits = c(30, 60)) +
   scale_y_continuous(guide = "prism_offset_minor") 

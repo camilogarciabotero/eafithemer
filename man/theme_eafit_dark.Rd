@@ -5,9 +5,9 @@
 \title{EAFIT dark theme}
 \usage{
 theme_eafit_dark(
-  text.font = "Courier",
-  title.font = "Courier",
-  legend.font = "Courier",
+  text.font = NULL,
+  title.font = NULL,
+  legend.font = NULL,
   title.size = 18,
   text.size = 14,
   subtitle.size = 12,
@@ -26,11 +26,11 @@ theme_eafit_dark(
 )
 }
 \arguments{
-\item{text.font}{font, Default: "Courier"}
+\item{text.font}{font, Default: NULL}
 
-\item{title.font}{font, Default: "Courier"}
+\item{title.font}{font, Default: NULL}
 
-\item{legend.font}{font, Default: "Courier"}
+\item{legend.font}{font, Default: NULL}
 
 \item{title.size}{title font size, Default: 18}
 
